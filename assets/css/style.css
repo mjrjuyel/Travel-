@@ -425,3 +425,43 @@ body{
     bottom: -24px;
   }
 /* ===================== Discover Part End ================= */
+/* ===================== Experience Part Start ================= */
+.experience_container{
+    gap: 3rem;
+}
+.experience_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+}
+.experience_images{
+    position: relative;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-self: center;
+}
+.experience_overlay{
+    overflow: hidden;
+}
+.experience_overlay:nth-child(1){
+    width: 320px;
+}
+.experience_overlay:nth-child(2){
+    width: 150px;
+    position: absolute;
+    right: -2rem;
+    top: 2rem;
+}
+.experience_image2,
+.experience_image1{
+    transform: scale(1);
+    transition: .3s;
+}
+.experience_image2:hover,
+.experience_image1:hover{
+    transform: scale(1.1);
+}
+
+/* ===================== Experience Part End ================= */
