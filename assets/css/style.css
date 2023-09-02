@@ -476,6 +476,7 @@ body{
     margin-bottom: var(--mb-2-5);
 }
 .video_content{
+    text-align: center;
     position: relative;
 }
 .video_button{
@@ -667,3 +668,114 @@ body{
     right: 2rem;
 }
 /* ====  scroll up  */
+
+
+/* ============        Responsive Part Start   ============= */
+
+@media screen and (max-width : 375px ){
+    
+    .nav_toggle_icon,
+    .nav_close_icon,
+    .nav_logo{
+        font-size: 1rem;
+    }
+    .home_data_title{
+        font-size: 1.5rem;
+    }
+
+    .home_container{
+        height: 68vh;
+        row-gap: 2rem;
+        align-content: center;
+    }
+    .home_image{
+        height: 68vh;
+    }
+    .home_socials{
+        gap: 5px;
+    }
+    .home_social{
+        font-size: 1rem;
+        gap: 1rem;
+        height: 40px;
+        width: 40px;
+    }
+    .home_social_icon{
+        transform: translate(78%,76%);
+    }
+
+    .home_info{
+        flex-direction: column;
+        width: max-content;
+    }
+    .home_info_detail{
+        width: 100px;
+    }
+    .home_info_image{
+        width: 120px;
+    }
+
+    .discover_card,
+    .discover_image{
+        width: 160px;
+    }
+    .experience_container{
+        display: block;
+        padding-bottom: 3rem;
+    }
+    .experience_title{
+        margin-bottom: 2rem;
+    }
+    .experience_content{
+        justify-content: flex-start;
+        gap: 1.5rem;
+        margin-bottom: var(--mb-2-5);
+    }
+    .experience_overlay:nth-child(1){
+        width: 220px;
+    }
+    .experience_overlay:nth-child(2){
+        width: 120px;
+        right: 1rem;
+    }
+    .place_container{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+
+   
+}
+ /* ==== for 425 device */
+@media screen and (max-width: 425px){
+    .home_container{
+        height: 80vh;
+        gap: 2rem;
+        align-content: center;
+    }
+    .home_image{
+        height: 80vh;
+    }
+    .home_info{
+        flex-direction: column;
+    }
+    .video_content{
+        width: 320px;
+    }
+    .experience_overlay:nth-child(1){
+        width: 220px;
+    }
+    .experience_overlay:nth-child(2){
+        width: 140px;
+        right: -3rem;
+    }
+    .place_container{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .place_card{
+        width: 280px;
+    }
+    .place_card:hover .place_button{
+        left: 13.4rem;
+    }
+}
